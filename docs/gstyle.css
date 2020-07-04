@@ -79,6 +79,7 @@ outline: none;
 /*media query for responsive design*/
 @media only screen and (max-width: 450px) {
 	#search-bar{max-width: 275px;}
+    #image{width: 180px;}
     .footlink{padding: 0 5px; font-size: 11px;}    
 }
 
