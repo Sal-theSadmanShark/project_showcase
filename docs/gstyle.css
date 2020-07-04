@@ -80,7 +80,10 @@ outline: none;
 @media only screen and (max-width: 450px) {
 	#search-bar{max-width: 275px;}
     #image{width: 180px;}
-    .footlink{padding: 0 5px; font-size: 11px;}    
+    .footlink{padding: 0 5px; font-size: 11px;}
+    #luck{ max-width:100%;}
+    .lucky2{ padding: 7px; margin-left: 3px;}    
+    .lucky1{ padding: 7px; margin-right:3px; }
 }
 
 /*don't forget to use devtools to check the responsiveness of your page*/
