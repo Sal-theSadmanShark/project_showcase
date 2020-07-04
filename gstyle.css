@@ -1,0 +1,85 @@
+/* 
+Hello Fellow Coder :D
+This is my first project for 'the odin project'
+This replica took me about 2 days to built , this is the second version i completely ditched the first one which was horrible :'(
+But i learbed alot from the process , i looked at other submission for help and it really worked
+this page is not perfect but it's alot better than my older one . Shoutout to my peers because their submissions really helped
+
+I'm marking the sections for details  . You can copy anything from this code.
+I hope this code helps you in any way , happy coding :D
+
+by , Salim Sadman
+*/
+
+/*to keep all elements inside the screen*/
+*{overflow: hidden;}
+/*to adjust the width after adding padding and border , keeps them from overflowing*/
+body{box-sizing: border-box; overflow: hidden; font-size: 1rem; margin: 0; padding: 0; max-width: 100%;}
+a{ text-decoration: none; color: gray;}
+
+
+#navbar{display: block; padding: 5px 10px;}
+.nl{float: left; padding: 1vws;}
+.nr{float: right; padding:1vw 1vw 1vw 1.5vw; }
+.navlink{padding:1vh 1vw; }
+.sign{ background-color: rgb(66, 133, 244); border-radius: 4px; color:white;}
+/*to stop displaying float*/
+#navbar::after{display: block; content: "";}
+
+
+/*middle division styles start*/
+#image  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    padding: 10px;
+}
+/*adjusting icons inside searchbar*/
+#search-bar{
+	display: flex;
+	border: 1px solid gray;
+	border-radius: 20px;
+	justify-content: space-between;
+	padding: 13px 20px;
+    box-shadow: 0.5px 0.5px 3px grey;
+    max-width: 500px;
+    margin:15px auto;
+}
+.search-icon{ color: azure;}
+/*outline and margin removed to put icons inside the searchbar*/
+#input{margin: 0;
+border:0;
+padding:0 10px;
+flex-grow: 2;
+outline: none;
+}
+#luck{ display: block; margin:15px auto; text-align: center;  padding: 20px 0;}
+.lucky1{ padding: 12px;   background-color: #f2f2f2; margin-right: 5px; }
+.lucky2{ padding: 12px;   background-color: #f2f2f2; margin-left: 5px; }
+/*end of middle divion styles*/
+
+/*absolute position to always keep the tab at the end of the  screen*/
+#footer{
+	position: absolute;
+	bottom: 0; left: 0; right: 0;
+	max-width: 100vw;
+	padding:10px 5px 20px 5px;
+	background-color:  rgba(240, 240, 240,0.8);
+    display: block;
+    border-top: 1px solid snow;
+    margin: auto;
+    font-size: 14px;
+    overflow: hidden;
+}
+#footdiv-left{float: left;}
+#footdiv-right{float: right;}
+.footlink{padding: 0 0.7vw; }
+
+/*media query for responsive design*/
+@media only screen and (max-width: 450px) {
+	#search-bar{max-width: 275px;}
+    .footlink{padding: 0 5px; font-size: 11px;}    
+}
+
+/*don't forget to use devtools to check the responsiveness of your page*/

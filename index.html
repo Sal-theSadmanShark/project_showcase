@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- 
+Hello Fellow Coder :D
+This is my first project for 'the odin project'
+This replica took me about 2 days to built , this is the second version i completely ditched the first one which was horrible :'(
+But i learbed alot from the process , i looked at other submission for help and it really worked
+this page is not perfect but it's alot better than my older one . Shoutout to my peers because their submissions really helped
+
+I'm marking the sections for details  . You can copy anything from this code.
+I hope this code helps you in any way :D
+
+by , Salim Sadman
+ -->
+
+<head> 
+    <title>Google replica</title>  
+
+     <!--meta tags for viewport and author name -->
+    <meta name="author" content="Salim Sadman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- fontawesome link for icons -->
+	<script src="https://kit.fontawesome.com/05a9990651.js" crossorigin="anonymous"></script>
+
+	<!-- live reload
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>  -->
+    
+	<link rel="stylesheet" type="text/css" href="gstyle.css">
+</head>
+
+<body>  
+	
+    <nav id="navbar">
+        <div class="nl">
+            <a href="#" class="navlink">About</a>
+            <a href="#" class="navlink">Store</a>	
+        </div>
+        <div class="nr">
+            <a href="#" class="navlink">Gmail</a>
+            <a href="#" class="navlink">Images</a>
+            <a href="#" class="navlink"><i class="fas fa-th"></i></a>
+            <a href="#" class="navlink sign">Sign in</a>
+        </div>
+    </nav>
+
+    
+ <!-- center division start -->
+
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" id="image">
+    
+        <div id="search-bar">
+        <i class="fas fa-search" class="search-icon"></i>
+        <input type="text" name="search" id="input">
+         <a href="#"> <i class="fas fa-microphone" class="search-icon"></i></a>	
+        </div>
+    
+         <div id="luck">   <a href="https://www.google.com/" class="lucky1">Google Search</a>
+            <a href="#" class="lucky2"  id="luck-test" onclick="myfunc()" title="Click Me !" >I'm Feelig Lucky </a> </div>            
+            <!--center division end  -->
+    
+    
+    <footer id="footer">
+    <div id="footdiv-left"><a href="#" class="footlink">Advertising</a>
+        <a href="#" class="footlink">Business</a>
+        <a href="#" class="footlink">How Search Works</a></div>
+    <div id="footdiv-right"> <a href="#" class="footlink">Privacy</a>
+    <a href="#" class="footlink">Terms</a>
+    <a href="#" class="footlink">Settings</a> </div>	
+    </footer>
+    
+    
+     
+<!-- JS code for luck button . Activates on click -->
+    <script type="text/javascript">
+        var text=[ "kinda lucky" , "very lucky" , "happy" , "ecstatic" , "sad" , "very sad" , "lonely" , "productive" , "very happy" ,"very lucky" ,"generous" ]
+     function myfunc(){ 
+         var lck ;
+         lck= text[Math.round(Math.random()*10)];  
+        document.getElementById("luck-test").innerHTML="I'm Feeling"+ " " + lck }
+        </script>  
+    <!-- end of js code  -->
+
+    
+</body>
+    </html>
